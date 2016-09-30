@@ -36,7 +36,9 @@ public class ArithmeticExpressions {
 		 
 		 System.out.println("The remainder when dividing the fourth number by the second:" +(num2 % num4));
 
+		 System.out.println("The first number raised to the power of the third number is: " + Math.pow (num1,num3));
 		 
+		 System.out.println("The square root of the fisth number is: " + Math.sqrt(num5));
 	
 	}	
 	
