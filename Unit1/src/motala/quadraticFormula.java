@@ -2,7 +2,7 @@
 /**
  * 
  */
-package Motala;
+package motala;
 
 import java.util.Scanner;
 /**

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package Motala;
+package motala;
 
 /**ICS3U
  * Rectangle
