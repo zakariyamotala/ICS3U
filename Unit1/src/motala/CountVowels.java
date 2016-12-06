@@ -23,20 +23,27 @@ public class CountVowels {
 
 		int vowels=0;
 		String text;
-		
+
 		System.out.println("Enter text: ");
 		text=scan.nextLine();
 
 		for (int i = 1; i < text.length(); i++){
-			if   (text.charAt(i) == 'a'|| text.charAt(i) == 'e' || text.charAt(i)=='i'||text.charAt(i)=='o'||text.charAt(i)=='u') ;      
-			
-			vowels++;
+			if   (text.charAt(i) == 'a') 
+				vowels++;
+			else if(text.charAt(i) == 'e') 
+				vowels++;
+			else if(text.charAt(i)=='i')
+				vowels++;
+			else if(text.charAt(i)=='o')
+				vowels++;
+			else if(text.charAt(i)=='u')      
+				vowels++;
 		}
-			System.out.println("The number of vowels in java programming assignment is: " +vowels);
+		System.out.println("The number of vowels in java programming assignment is: " +vowels+".");
 
-			
-		}
+
 	}
+}
 
 
 
