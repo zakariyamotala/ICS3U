@@ -33,7 +33,7 @@ public class DesertVsNorthPole {
 		double percent1 = 0;
 		
 
-		BufferedImage[]picture = new BufferedImage[7];
+		BufferedImage[]picture = new BufferedImage[9];
 		try {
 
 
@@ -44,7 +44,10 @@ public class DesertVsNorthPole {
 			picture[4] = ImageIO.read(new File("1.jpg"));
 			picture[5] = ImageIO.read(new File("arctic landscape.jpg"));
 			picture[6] = ImageIO.read(new File("polar101.jpg"));
-
+			picture[7] = ImageIO.read(new File("dead.jpg"));
+			picture[8] = ImageIO.read(new File("santa.jpg"));
+			
+			
 			c.println("Would you like to play?");
 			q=c.readLine();
 
@@ -144,7 +147,7 @@ public class DesertVsNorthPole {
 					c.clear();
 					c.println("on your journey, you find a polar bear, do you 'fight it'? or 'run'?");
 					option = c.readLine();
-					//Since you chose north pole, you walk and suddenly you see a polar bear, you either fight it or you can run from it
+//					Since you chose north pole, you walk and suddenly you see a polar bear, you either fight it or you can run from it
 					c.drawImage((Image) picture[6],0,0,null);
 					Thread.sleep(2000);
 					c.clear();
@@ -154,6 +157,9 @@ public class DesertVsNorthPole {
 						// if you fight it, you killed him, now do you keep moving or climb a tree
 						if (option1.equalsIgnoreCase("keep moving")) {
 							c.println("you died of starvation and fatigueness");
+							c.drawImage(picture[7], 0, 250, null);
+							Thread.sleep(2000);
+							c.clear();
 //							if you kept moving you died because you had no food, or water and you were tired because of walking in all of that heavy snow.
 						} else {// climb a tree
 							double percent11;
@@ -166,7 +172,7 @@ public class DesertVsNorthPole {
 								} else {
 									c.println("You fell while climbing the tree.");
 									c.println("try again");
-									//if you fall while climbing the tree, you just keep trying until you make it to the top and then you get service and call for help---helicopter saves you. 
+//									if you fall while climbing the tree, you just keep trying until you make it to the top and then you get service and call for help---helicopter saves you. 
 								}
 							} while (percent11 < 0.5);
 
@@ -177,11 +183,16 @@ public class DesertVsNorthPole {
 							percent=Math.random();
 							c.println("The ice breaks under your feet and you fall into the water.");
 							c.println("Now you have to look for a hole through the ice.");
-
+//							if you run from the polar bear, you fall into the water because the ice breaks under your feet
 							if (percent >= 0.5) {
 								c.println("You found the hole through the ice,climbed out, and santa saves you congratzzz YOU WIN!!!Go enjoy life now!");
+								c.drawImage(picture[8], 0, 250, null);
+								Thread.sleep(10000);
+								c.clear();
+								//Now you have to quickly find a whole above your head to escape, and if you do, santa will save you
 							} else if (percent < 0.5) {
 								c.println("You did not find the hole and a shark eats you. Try again\n");
+								//								if you dont find the hole, a shark will eat you, but you could keep trying until you win because parts of this game is designed for baby's. So you will win eventually =)
 							}
 						} while (percent < 0.5);
 					}
@@ -192,6 +203,7 @@ public class DesertVsNorthPole {
 
 
 					c.println("Would you like to play again?");
+					// At the end of the game, you could play again and maybe this time pick the side you never chose the other time.
 					q=c.readLine();
 				}}while(q.equals("yes"));
 		} catch (Exception e) {
