@@ -6,6 +6,7 @@ package motala;
 import java.util.Scanner;
 
 import java.awt.Image;
+import hsa_new.Console;
 
 /**ICS3U
  * G1.java
@@ -18,8 +19,8 @@ public class G1 {
 	/**
 	 * @param args
 	 */
-	public static void main(String[] args) {
-
+	public static void main(String[] args){ 
+		
 		Console c = new Console();
 
 
