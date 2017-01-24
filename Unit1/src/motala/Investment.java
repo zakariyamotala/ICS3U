@@ -17,6 +17,7 @@ public class Investment {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
+		System.exit(0);
 		
 		int investment = 2500;
 		int wInvest = 5000;

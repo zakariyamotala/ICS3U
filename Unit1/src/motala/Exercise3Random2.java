@@ -11,7 +11,7 @@ import java.util.Scanner;
  */
 public class Exercise3Random2 {
 
-	/** a program that simulates rolling two dice twice, first for the user, and then for the computer. Then announce who won: the user, the computer, or say it was a tie.
+	/** a program that simulates rolling two dice twice, first for the user, and then for the computer.Then announce who won: the user, the computer, or say it was a tie.
 	 * 
 	 */
 	public static void main(String[] args) {

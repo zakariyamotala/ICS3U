@@ -3,22 +3,22 @@
  */
 package motala;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
  * @author Zakariya Motala
  *
  */
-public class Project {
+public class PowersTable {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
-		Scanner scan = new Scanner(System.in);
-		DecimalFormat df= new DecimalFormat ("0.00");
+		
+		Scanner scan = new Scanner(System.in);	
+	
+		System.out.format("%-10s %10s %10s %10s %10s",);
 		
 		
 		
@@ -33,8 +33,11 @@ public class Project {
 		
 		
 		
-	scan.close();	
-
+		
+		
+		
+		
+		
 	}
 
 }
